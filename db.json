@@ -1,0 +1,2405 @@
+{
+  "meters": [
+    {
+      "id": "0001",
+      "label": "Urithiru Tower Pinnacle - Electricity",
+      "location": { "lat": 47.5316, "lon": 21.6273 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0002",
+      "label": "Shattered Plains Chasmfiend Nest - Gas",
+      "location": { "lat": 47.5331, "lon": 21.6114 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0003",
+      "label": "Kholinar Palace Oathgate - Electricity",
+      "location": { "lat": 47.5311, "lon": 21.6244 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0004",
+      "label": "Honor's Perpendicularity - Gas",
+      "location": { "lat": 47.5289, "lon": 21.6347 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0005",
+      "label": "Cultivation's Garden - Electricity",
+      "location": { "lat": 47.5312, "lon": 21.6265 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0006",
+      "label": "Luthadel Keep Venture - Gas",
+      "location": { "lat": 47.5287, "lon": 21.6221 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0007",
+      "label": "Well of Ascension - Electricity",
+      "location": { "lat": 47.5325, "lon": 21.6198 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0008",
+      "label": "Kredik Shaw Steel Inquisitor Hall - Gas",
+      "location": { "lat": 47.5267, "lon": 21.6156 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0009",
+      "label": "Elendel Wax and Wayne Mansion - Electricity",
+      "location": { "lat": 47.5298, "lon": 21.6312 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0010",
+      "label": "Bilming Steel Mill - Gas",
+      "location": { "lat": 47.5342, "lon": 21.6089 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0011",
+      "label": "Hemalurgy Spike Laboratory - Electricity",
+      "location": { "lat": 47.5279, "lon": 21.6234 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0012",
+      "label": "Atium Geode Mining Station - Gas",
+      "location": { "lat": 47.5356, "lon": 21.6167 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0013",
+      "label": "Scadrial Southern Continent - Electricity",
+      "location": { "lat": 47.5301, "lon": 21.6189 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0014",
+      "label": "New Seran Broadsheets Office - Gas",
+      "location": { "lat": 47.5324, "lon": 21.6278 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0015",
+      "label": "Thaylen City Gemheart Market - Electricity",
+      "location": { "lat": 47.5318, "lon": 21.6251 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0016",
+      "label": "Shinovar Horneater Peaks - Gas",
+      "location": { "lat": 47.5306, "lon": 21.6259 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0017",
+      "label": "Lasting Integrity Honorspren City - Electricity",
+      "location": { "lat": 47.5263, "lon": 21.6203 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0018",
+      "label": "Aimia Sleepless Sanctuary - Gas",
+      "location": { "lat": 47.5295, "lon": 21.6287 },
+      "type": "gas",
+      "unit": "m3"
+    },
+    {
+      "id": "0019",
+      "label": "Bridge Four Barracks - Electricity",
+      "location": { "lat": 47.5338, "lon": 21.6142 },
+      "type": "electricity",
+      "unit": "kWh"
+    },
+    {
+      "id": "0020",
+      "label": "Pits of Hathsin Atium Mine - Gas",
+      "location": { "lat": 47.5272, "lon": 21.6178 },
+      "type": "gas",
+      "unit": "m3"
+    }
+  ],
+  "readings": [
+    {
+      "id": "1",
+      "meterId": "0001",
+      "month": "JUN",
+      "year": 2024,
+      "value": 1250
+    },
+    {
+      "id": "2",
+      "meterId": "0001",
+      "month": "JUL",
+      "year": 2024,
+      "value": 1320
+    },
+    {
+      "id": "3",
+      "meterId": "0001",
+      "month": "AUG",
+      "year": 2024,
+      "value": 1395
+    },
+    {
+      "id": "4",
+      "meterId": "0001",
+      "month": "SEP",
+      "year": 2024,
+      "value": 1460
+    },
+    {
+      "id": "5",
+      "meterId": "0001",
+      "month": "OCT",
+      "year": 2024,
+      "value": 1540
+    },
+    {
+      "id": "6",
+      "meterId": "0001",
+      "month": "NOV",
+      "year": 2024,
+      "value": 1625
+    },
+    {
+      "id": "7",
+      "meterId": "0001",
+      "month": "DEC",
+      "year": 2024,
+      "value": 1720
+    },
+    {
+      "id": "8",
+      "meterId": "0001",
+      "month": "JAN",
+      "year": 2025,
+      "value": 1810
+    },
+    {
+      "id": "9",
+      "meterId": "0001",
+      "month": "FEB",
+      "year": 2025,
+      "value": 1885
+    },
+    {
+      "id": "10",
+      "meterId": "0001",
+      "month": "MAR",
+      "year": 2025,
+      "value": 1965
+    },
+    {
+      "id": "11",
+      "meterId": "0001",
+      "month": "APR",
+      "year": 2025,
+      "value": 2040
+    },
+    {
+      "id": "12",
+      "meterId": "0001",
+      "month": "MAY",
+      "year": 2025,
+      "value": 2120
+    },
+    {
+      "id": "13",
+      "meterId": "0001",
+      "month": "JUN",
+      "year": 2025,
+      "value": 2195
+    },
+    {
+      "id": "14",
+      "meterId": "0001",
+      "month": "JUL",
+      "year": 2025,
+      "value": 2275
+    },
+    {
+      "id": "15",
+      "meterId": "0001",
+      "month": "AUG",
+      "year": 2025,
+      "value": 2350
+    },
+    {
+      "id": "16",
+      "meterId": "0001",
+      "month": "SEP",
+      "year": 2025,
+      "value": 2425
+    },
+
+    {
+      "id": "17",
+      "meterId": "0002",
+      "month": "JUN",
+      "year": 2024,
+      "value": 85
+    },
+    {
+      "id": "18",
+      "meterId": "0002",
+      "month": "JUL",
+      "year": 2024,
+      "value": 92
+    },
+    {
+      "id": "19",
+      "meterId": "0002",
+      "month": "AUG",
+      "year": 2024,
+      "value": 97
+    },
+    {
+      "id": "20",
+      "meterId": "0002",
+      "month": "SEP",
+      "year": 2024,
+      "value": 105
+    },
+    {
+      "id": "21",
+      "meterId": "0002",
+      "month": "OCT",
+      "year": 2024,
+      "value": 114
+    },
+    {
+      "id": "22",
+      "meterId": "0002",
+      "month": "NOV",
+      "year": 2024,
+      "value": 125
+    },
+    {
+      "id": "23",
+      "meterId": "0002",
+      "month": "DEC",
+      "year": 2024,
+      "value": 138
+    },
+    {
+      "id": "24",
+      "meterId": "0002",
+      "month": "JAN",
+      "year": 2025,
+      "value": 152
+    },
+    {
+      "id": "25",
+      "meterId": "0002",
+      "month": "FEB",
+      "year": 2025,
+      "value": 164
+    },
+    {
+      "id": "26",
+      "meterId": "0002",
+      "month": "MAR",
+      "year": 2025,
+      "value": 175
+    },
+    {
+      "id": "27",
+      "meterId": "0002",
+      "month": "APR",
+      "year": 2025,
+      "value": 186
+    },
+    {
+      "id": "28",
+      "meterId": "0002",
+      "month": "MAY",
+      "year": 2025,
+      "value": 198
+    },
+    {
+      "id": "29",
+      "meterId": "0002",
+      "month": "JUN",
+      "year": 2025,
+      "value": 209
+    },
+    {
+      "id": "30",
+      "meterId": "0002",
+      "month": "JUL",
+      "year": 2025,
+      "value": 221
+    },
+    {
+      "id": "31",
+      "meterId": "0002",
+      "month": "AUG",
+      "year": 2025,
+      "value": 234
+    },
+    {
+      "id": "32",
+      "meterId": "0002",
+      "month": "SEP",
+      "year": 2025,
+      "value": 246
+    },
+
+    {
+      "id": "33",
+      "meterId": "0003",
+      "month": "JUN",
+      "year": 2024,
+      "value": 880
+    },
+    {
+      "id": "34",
+      "meterId": "0003",
+      "month": "JUL",
+      "year": 2024,
+      "value": 935
+    },
+    {
+      "id": "35",
+      "meterId": "0003",
+      "month": "AUG",
+      "year": 2024,
+      "value": 995
+    },
+    {
+      "id": "36",
+      "meterId": "0003",
+      "month": "SEP",
+      "year": 2024,
+      "value": 1050
+    },
+    {
+      "id": "37",
+      "meterId": "0003",
+      "month": "OCT",
+      "year": 2024,
+      "value": 1115
+    },
+    {
+      "id": "38",
+      "meterId": "0003",
+      "month": "NOV",
+      "year": 2024,
+      "value": 1185
+    },
+    {
+      "id": "39",
+      "meterId": "0003",
+      "month": "DEC",
+      "year": 2024,
+      "value": 1260
+    },
+    {
+      "id": "40",
+      "meterId": "0003",
+      "month": "JAN",
+      "year": 2025,
+      "value": 1340
+    },
+    {
+      "id": "41",
+      "meterId": "0003",
+      "month": "FEB",
+      "year": 2025,
+      "value": 1410
+    },
+    {
+      "id": "42",
+      "meterId": "0003",
+      "month": "MAR",
+      "year": 2025,
+      "value": 1485
+    },
+    {
+      "id": "43",
+      "meterId": "0003",
+      "month": "APR",
+      "year": 2025,
+      "value": 1555
+    },
+    {
+      "id": "44",
+      "meterId": "0003",
+      "month": "MAY",
+      "year": 2025,
+      "value": 1630
+    },
+    {
+      "id": "45",
+      "meterId": "0003",
+      "month": "JUN",
+      "year": 2025,
+      "value": 1705
+    },
+    {
+      "id": "46",
+      "meterId": "0003",
+      "month": "JUL",
+      "year": 2025,
+      "value": 1785
+    },
+    {
+      "id": "47",
+      "meterId": "0003",
+      "month": "AUG",
+      "year": 2025,
+      "value": 1860
+    },
+    {
+      "id": "48",
+      "meterId": "0003",
+      "month": "SEP",
+      "year": 2025,
+      "value": 1935
+    },
+
+    {
+      "id": "49",
+      "meterId": "0004",
+      "month": "JUN",
+      "year": 2024,
+      "value": 62
+    },
+    {
+      "id": "50",
+      "meterId": "0004",
+      "month": "JUL",
+      "year": 2024,
+      "value": 68
+    },
+    {
+      "id": "51",
+      "meterId": "0004",
+      "month": "AUG",
+      "year": 2024,
+      "value": 73
+    },
+    {
+      "id": "52",
+      "meterId": "0004",
+      "month": "SEP",
+      "year": 2024,
+      "value": 79
+    },
+    {
+      "id": "53",
+      "meterId": "0004",
+      "month": "OCT",
+      "year": 2024,
+      "value": 86
+    },
+    {
+      "id": "54",
+      "meterId": "0004",
+      "month": "NOV",
+      "year": 2024,
+      "value": 94
+    },
+    {
+      "id": "55",
+      "meterId": "0004",
+      "month": "DEC",
+      "year": 2024,
+      "value": 103
+    },
+    {
+      "id": "56",
+      "meterId": "0004",
+      "month": "JAN",
+      "year": 2025,
+      "value": 113
+    },
+    {
+      "id": "57",
+      "meterId": "0004",
+      "month": "FEB",
+      "year": 2025,
+      "value": 122
+    },
+    {
+      "id": "58",
+      "meterId": "0004",
+      "month": "MAR",
+      "year": 2025,
+      "value": 131
+    },
+    {
+      "id": "59",
+      "meterId": "0004",
+      "month": "APR",
+      "year": 2025,
+      "value": 140
+    },
+    {
+      "id": "60",
+      "meterId": "0004",
+      "month": "MAY",
+      "year": 2025,
+      "value": 150
+    },
+    {
+      "id": "61",
+      "meterId": "0004",
+      "month": "JUN",
+      "year": 2025,
+      "value": 159
+    },
+    {
+      "id": "62",
+      "meterId": "0004",
+      "month": "JUL",
+      "year": 2025,
+      "value": 169
+    },
+    {
+      "id": "63",
+      "meterId": "0004",
+      "month": "AUG",
+      "year": 2025,
+      "value": 178
+    },
+    {
+      "id": "64",
+      "meterId": "0004",
+      "month": "SEP",
+      "year": 2025,
+      "value": 188
+    },
+
+    {
+      "id": "65",
+      "meterId": "0005",
+      "month": "JUN",
+      "year": 2024,
+      "value": 720
+    },
+    {
+      "id": "66",
+      "meterId": "0005",
+      "month": "JUL",
+      "year": 2024,
+      "value": 765
+    },
+    {
+      "id": "67",
+      "meterId": "0005",
+      "month": "AUG",
+      "year": 2024,
+      "value": 815
+    },
+    {
+      "id": "68",
+      "meterId": "0005",
+      "month": "SEP",
+      "year": 2024,
+      "value": 860
+    },
+    {
+      "id": "69",
+      "meterId": "0005",
+      "month": "OCT",
+      "year": 2024,
+      "value": 915
+    },
+    {
+      "id": "70",
+      "meterId": "0005",
+      "month": "NOV",
+      "year": 2024,
+      "value": 975
+    },
+    {
+      "id": "71",
+      "meterId": "0005",
+      "month": "DEC",
+      "year": 2024,
+      "value": 1040
+    },
+    {
+      "id": "72",
+      "meterId": "0005",
+      "month": "JAN",
+      "year": 2025,
+      "value": 1110
+    },
+    {
+      "id": "73",
+      "meterId": "0005",
+      "month": "FEB",
+      "year": 2025,
+      "value": 1175
+    },
+    {
+      "id": "74",
+      "meterId": "0005",
+      "month": "MAR",
+      "year": 2025,
+      "value": 1240
+    },
+    {
+      "id": "75",
+      "meterId": "0005",
+      "month": "APR",
+      "year": 2025,
+      "value": 1305
+    },
+    {
+      "id": "76",
+      "meterId": "0005",
+      "month": "MAY",
+      "year": 2025,
+      "value": 1375
+    },
+    {
+      "id": "77",
+      "meterId": "0005",
+      "month": "JUN",
+      "year": 2025,
+      "value": 1440
+    },
+    {
+      "id": "78",
+      "meterId": "0005",
+      "month": "JUL",
+      "year": 2025,
+      "value": 1510
+    },
+    {
+      "id": "79",
+      "meterId": "0005",
+      "month": "AUG",
+      "year": 2025,
+      "value": 1575
+    },
+    {
+      "id": "80",
+      "meterId": "0005",
+      "month": "SEP",
+      "year": 2025,
+      "value": 1645
+    },
+
+    {
+      "id": "81",
+      "meterId": "0006",
+      "month": "JUN",
+      "year": 2024,
+      "value": 45
+    },
+    {
+      "id": "82",
+      "meterId": "0006",
+      "month": "JUL",
+      "year": 2024,
+      "value": 50
+    },
+    {
+      "id": "83",
+      "meterId": "0006",
+      "month": "AUG",
+      "year": 2024,
+      "value": 54
+    },
+    {
+      "id": "84",
+      "meterId": "0006",
+      "month": "SEP",
+      "year": 2024,
+      "value": 59
+    },
+    {
+      "id": "85",
+      "meterId": "0006",
+      "month": "OCT",
+      "year": 2024,
+      "value": 65
+    },
+    {
+      "id": "86",
+      "meterId": "0006",
+      "month": "NOV",
+      "year": 2024,
+      "value": 72
+    },
+    {
+      "id": "87",
+      "meterId": "0006",
+      "month": "DEC",
+      "year": 2024,
+      "value": 80
+    },
+    {
+      "id": "88",
+      "meterId": "0006",
+      "month": "JAN",
+      "year": 2025,
+      "value": 89
+    },
+    {
+      "id": "89",
+      "meterId": "0006",
+      "month": "FEB",
+      "year": 2025,
+      "value": 97
+    },
+    {
+      "id": "90",
+      "meterId": "0006",
+      "month": "MAR",
+      "year": 2025,
+      "value": 105
+    },
+    {
+      "id": "91",
+      "meterId": "0006",
+      "month": "APR",
+      "year": 2025,
+      "value": 113
+    },
+    {
+      "id": "92",
+      "meterId": "0006",
+      "month": "MAY",
+      "year": 2025,
+      "value": 122
+    },
+    {
+      "id": "93",
+      "meterId": "0006",
+      "month": "JUN",
+      "year": 2025,
+      "value": 130
+    },
+    {
+      "id": "94",
+      "meterId": "0006",
+      "month": "JUL",
+      "year": 2025,
+      "value": 139
+    },
+    {
+      "id": "95",
+      "meterId": "0006",
+      "month": "AUG",
+      "year": 2025,
+      "value": 147
+    },
+    {
+      "id": "96",
+      "meterId": "0006",
+      "month": "SEP",
+      "year": 2025,
+      "value": 156
+    },
+
+    {
+      "id": "97",
+      "meterId": "0007",
+      "month": "JUN",
+      "year": 2024,
+      "value": 340
+    },
+    {
+      "id": "98",
+      "meterId": "0007",
+      "month": "JUL",
+      "year": 2024,
+      "value": 375
+    },
+    {
+      "id": "99",
+      "meterId": "0007",
+      "month": "AUG",
+      "year": 2024,
+      "value": 415
+    },
+    {
+      "id": "100",
+      "meterId": "0007",
+      "month": "SEP",
+      "year": 2024,
+      "value": 450
+    },
+    {
+      "id": "101",
+      "meterId": "0007",
+      "month": "OCT",
+      "year": 2024,
+      "value": 490
+    },
+    {
+      "id": "102",
+      "meterId": "0007",
+      "month": "NOV",
+      "year": 2024,
+      "value": 535
+    },
+    {
+      "id": "103",
+      "meterId": "0007",
+      "month": "DEC",
+      "year": 2024,
+      "value": 585
+    },
+    {
+      "id": "104",
+      "meterId": "0007",
+      "month": "JAN",
+      "year": 2025,
+      "value": 640
+    },
+    {
+      "id": "105",
+      "meterId": "0007",
+      "month": "FEB",
+      "year": 2025,
+      "value": 690
+    },
+    {
+      "id": "106",
+      "meterId": "0007",
+      "month": "MAR",
+      "year": 2025,
+      "value": 745
+    },
+    {
+      "id": "107",
+      "meterId": "0007",
+      "month": "APR",
+      "year": 2025,
+      "value": 795
+    },
+    {
+      "id": "108",
+      "meterId": "0007",
+      "month": "MAY",
+      "year": 2025,
+      "value": 850
+    },
+    {
+      "id": "109",
+      "meterId": "0007",
+      "month": "JUN",
+      "year": 2025,
+      "value": 900
+    },
+    {
+      "id": "110",
+      "meterId": "0007",
+      "month": "JUL",
+      "year": 2025,
+      "value": 955
+    },
+    {
+      "id": "111",
+      "meterId": "0007",
+      "month": "AUG",
+      "year": 2025,
+      "value": 1005
+    },
+    {
+      "id": "112",
+      "meterId": "0007",
+      "month": "SEP",
+      "year": 2025,
+      "value": 1060
+    },
+
+    {
+      "id": "113",
+      "meterId": "0008",
+      "month": "JUN",
+      "year": 2024,
+      "value": 28
+    },
+    {
+      "id": "114",
+      "meterId": "0008",
+      "month": "JUL",
+      "year": 2024,
+      "value": 32
+    },
+    {
+      "id": "115",
+      "meterId": "0008",
+      "month": "AUG",
+      "year": 2024,
+      "value": 35
+    },
+    {
+      "id": "116",
+      "meterId": "0008",
+      "month": "SEP",
+      "year": 2024,
+      "value": 39
+    },
+    {
+      "id": "117",
+      "meterId": "0008",
+      "month": "OCT",
+      "year": 2024,
+      "value": 44
+    },
+    {
+      "id": "118",
+      "meterId": "0008",
+      "month": "NOV",
+      "year": 2024,
+      "value": 50
+    },
+    {
+      "id": "119",
+      "meterId": "0008",
+      "month": "DEC",
+      "year": 2024,
+      "value": 57
+    },
+    {
+      "id": "120",
+      "meterId": "0008",
+      "month": "JAN",
+      "year": 2025,
+      "value": 65
+    },
+    {
+      "id": "121",
+      "meterId": "0008",
+      "month": "FEB",
+      "year": 2025,
+      "value": 72
+    },
+    {
+      "id": "122",
+      "meterId": "0008",
+      "month": "MAR",
+      "year": 2025,
+      "value": 79
+    },
+    {
+      "id": "123",
+      "meterId": "0008",
+      "month": "APR",
+      "year": 2025,
+      "value": 86
+    },
+    {
+      "id": "124",
+      "meterId": "0008",
+      "month": "MAY",
+      "year": 2025,
+      "value": 94
+    },
+    {
+      "id": "125",
+      "meterId": "0008",
+      "month": "JUN",
+      "year": 2025,
+      "value": 101
+    },
+    {
+      "id": "126",
+      "meterId": "0008",
+      "month": "JUL",
+      "year": 2025,
+      "value": 109
+    },
+    {
+      "id": "127",
+      "meterId": "0008",
+      "month": "AUG",
+      "year": 2025,
+      "value": 116
+    },
+    {
+      "id": "128",
+      "meterId": "0008",
+      "month": "SEP",
+      "year": 2025,
+      "value": 124
+    },
+
+    {
+      "id": "129",
+      "meterId": "0009",
+      "month": "JUN",
+      "year": 2024,
+      "value": 1580
+    },
+    {
+      "id": "130",
+      "meterId": "0009",
+      "month": "JUL",
+      "year": 2024,
+      "value": 1640
+    },
+    {
+      "id": "131",
+      "meterId": "0009",
+      "month": "AUG",
+      "year": 2024,
+      "value": 1705
+    },
+    {
+      "id": "132",
+      "meterId": "0009",
+      "month": "SEP",
+      "year": 2024,
+      "value": 1765
+    },
+    {
+      "id": "133",
+      "meterId": "0009",
+      "month": "OCT",
+      "year": 2024,
+      "value": 1835
+    },
+    {
+      "id": "134",
+      "meterId": "0009",
+      "month": "NOV",
+      "year": 2024,
+      "value": 1910
+    },
+    {
+      "id": "135",
+      "meterId": "0009",
+      "month": "DEC",
+      "year": 2024,
+      "value": 1990
+    },
+    {
+      "id": "136",
+      "meterId": "0009",
+      "month": "JAN",
+      "year": 2025,
+      "value": 2075
+    },
+    {
+      "id": "137",
+      "meterId": "0009",
+      "month": "FEB",
+      "year": 2025,
+      "value": 2155
+    },
+    {
+      "id": "138",
+      "meterId": "0009",
+      "month": "MAR",
+      "year": 2025,
+      "value": 2240
+    },
+    {
+      "id": "139",
+      "meterId": "0009",
+      "month": "APR",
+      "year": 2025,
+      "value": 2320
+    },
+    {
+      "id": "140",
+      "meterId": "0009",
+      "month": "MAY",
+      "year": 2025,
+      "value": 2405
+    },
+    {
+      "id": "141",
+      "meterId": "0009",
+      "month": "JUN",
+      "year": 2025,
+      "value": 2485
+    },
+    {
+      "id": "142",
+      "meterId": "0009",
+      "month": "JUL",
+      "year": 2025,
+      "value": 2570
+    },
+    {
+      "id": "143",
+      "meterId": "0009",
+      "month": "AUG",
+      "year": 2025,
+      "value": 2650
+    },
+    {
+      "id": "144",
+      "meterId": "0009",
+      "month": "SEP",
+      "year": 2025,
+      "value": 2735
+    },
+
+    {
+      "id": "145",
+      "meterId": "0010",
+      "month": "JUN",
+      "year": 2024,
+      "value": 112
+    },
+    {
+      "id": "146",
+      "meterId": "0010",
+      "month": "JUL",
+      "year": 2024,
+      "value": 119
+    },
+    {
+      "id": "147",
+      "meterId": "0010",
+      "month": "AUG",
+      "year": 2024,
+      "value": 125
+    },
+    {
+      "id": "148",
+      "meterId": "0010",
+      "month": "SEP",
+      "year": 2024,
+      "value": 132
+    },
+    {
+      "id": "149",
+      "meterId": "0010",
+      "month": "OCT",
+      "year": 2024,
+      "value": 140
+    },
+    {
+      "id": "150",
+      "meterId": "0010",
+      "month": "NOV",
+      "year": 2024,
+      "value": 149
+    },
+    {
+      "id": "151",
+      "meterId": "0010",
+      "month": "DEC",
+      "year": 2024,
+      "value": 159
+    },
+    {
+      "id": "152",
+      "meterId": "0010",
+      "month": "JAN",
+      "year": 2025,
+      "value": 170
+    },
+    {
+      "id": "153",
+      "meterId": "0010",
+      "month": "FEB",
+      "year": 2025,
+      "value": 180
+    },
+    {
+      "id": "154",
+      "meterId": "0010",
+      "month": "MAR",
+      "year": 2025,
+      "value": 191
+    },
+    {
+      "id": "155",
+      "meterId": "0010",
+      "month": "APR",
+      "year": 2025,
+      "value": 201
+    },
+    {
+      "id": "156",
+      "meterId": "0010",
+      "month": "MAY",
+      "year": 2025,
+      "value": 212
+    },
+    {
+      "id": "157",
+      "meterId": "0010",
+      "month": "JUN",
+      "year": 2025,
+      "value": 222
+    },
+    {
+      "id": "158",
+      "meterId": "0010",
+      "month": "JUL",
+      "year": 2025,
+      "value": 233
+    },
+    {
+      "id": "159",
+      "meterId": "0010",
+      "month": "AUG",
+      "year": 2025,
+      "value": 243
+    },
+    {
+      "id": "160",
+      "meterId": "0010",
+      "month": "SEP",
+      "year": 2025,
+      "value": 254
+    },
+
+    {
+      "id": "161",
+      "meterId": "0011",
+      "month": "JUN",
+      "year": 2024,
+      "value": 480
+    },
+    {
+      "id": "162",
+      "meterId": "0011",
+      "month": "JUL",
+      "year": 2024,
+      "value": 515
+    },
+    {
+      "id": "163",
+      "meterId": "0011",
+      "month": "AUG",
+      "year": 2024,
+      "value": 555
+    },
+    {
+      "id": "164",
+      "meterId": "0011",
+      "month": "SEP",
+      "year": 2024,
+      "value": 590
+    },
+    {
+      "id": "165",
+      "meterId": "0011",
+      "month": "OCT",
+      "year": 2024,
+      "value": 630
+    },
+    {
+      "id": "166",
+      "meterId": "0011",
+      "month": "NOV",
+      "year": 2024,
+      "value": 675
+    },
+    {
+      "id": "167",
+      "meterId": "0011",
+      "month": "DEC",
+      "year": 2024,
+      "value": 725
+    },
+    {
+      "id": "168",
+      "meterId": "0011",
+      "month": "JAN",
+      "year": 2025,
+      "value": 780
+    },
+    {
+      "id": "169",
+      "meterId": "0011",
+      "month": "FEB",
+      "year": 2025,
+      "value": 830
+    },
+    {
+      "id": "170",
+      "meterId": "0011",
+      "month": "MAR",
+      "year": 2025,
+      "value": 885
+    },
+    {
+      "id": "171",
+      "meterId": "0011",
+      "month": "APR",
+      "year": 2025,
+      "value": 935
+    },
+    {
+      "id": "172",
+      "meterId": "0011",
+      "month": "MAY",
+      "year": 2025,
+      "value": 990
+    },
+    {
+      "id": "173",
+      "meterId": "0011",
+      "month": "JUN",
+      "year": 2025,
+      "value": 1040
+    },
+    {
+      "id": "174",
+      "meterId": "0011",
+      "month": "JUL",
+      "year": 2025,
+      "value": 1095
+    },
+    {
+      "id": "175",
+      "meterId": "0011",
+      "month": "AUG",
+      "year": 2025,
+      "value": 1145
+    },
+    {
+      "id": "176",
+      "meterId": "0011",
+      "month": "SEP",
+      "year": 2025,
+      "value": 1200
+    },
+
+    {
+      "id": "177",
+      "meterId": "0012",
+      "month": "JUN",
+      "year": 2024,
+      "value": 73
+    },
+    {
+      "id": "178",
+      "meterId": "0012",
+      "month": "JUL",
+      "year": 2024,
+      "value": 78
+    },
+    {
+      "id": "179",
+      "meterId": "0012",
+      "month": "AUG",
+      "year": 2024,
+      "value": 82
+    },
+    {
+      "id": "180",
+      "meterId": "0012",
+      "month": "SEP",
+      "year": 2024,
+      "value": 87
+    },
+    {
+      "id": "181",
+      "meterId": "0012",
+      "month": "OCT",
+      "year": 2024,
+      "value": 93
+    },
+    {
+      "id": "182",
+      "meterId": "0012",
+      "month": "NOV",
+      "year": 2024,
+      "value": 100
+    },
+    {
+      "id": "183",
+      "meterId": "0012",
+      "month": "DEC",
+      "year": 2024,
+      "value": 108
+    },
+    {
+      "id": "184",
+      "meterId": "0012",
+      "month": "JAN",
+      "year": 2025,
+      "value": 117
+    },
+    {
+      "id": "185",
+      "meterId": "0012",
+      "month": "FEB",
+      "year": 2025,
+      "value": 125
+    },
+    {
+      "id": "186",
+      "meterId": "0012",
+      "month": "MAR",
+      "year": 2025,
+      "value": 134
+    },
+    {
+      "id": "187",
+      "meterId": "0012",
+      "month": "APR",
+      "year": 2025,
+      "value": 142
+    },
+    {
+      "id": "188",
+      "meterId": "0012",
+      "month": "MAY",
+      "year": 2025,
+      "value": 151
+    },
+    {
+      "id": "189",
+      "meterId": "0012",
+      "month": "JUN",
+      "year": 2025,
+      "value": 159
+    },
+    {
+      "id": "190",
+      "meterId": "0012",
+      "month": "JUL",
+      "year": 2025,
+      "value": 168
+    },
+    {
+      "id": "191",
+      "meterId": "0012",
+      "month": "AUG",
+      "year": 2025,
+      "value": 176
+    },
+    {
+      "id": "192",
+      "meterId": "0012",
+      "month": "SEP",
+      "year": 2025,
+      "value": 185
+    },
+
+    {
+      "id": "193",
+      "meterId": "0013",
+      "month": "JUN",
+      "year": 2024,
+      "value": 920
+    },
+    {
+      "id": "194",
+      "meterId": "0013",
+      "month": "JUL",
+      "year": 2024,
+      "value": 970
+    },
+    {
+      "id": "195",
+      "meterId": "0013",
+      "month": "AUG",
+      "year": 2024,
+      "value": 1025
+    },
+    {
+      "id": "196",
+      "meterId": "0013",
+      "month": "SEP",
+      "year": 2024,
+      "value": 1075
+    },
+    {
+      "id": "197",
+      "meterId": "0013",
+      "month": "OCT",
+      "year": 2024,
+      "value": 1135
+    },
+    {
+      "id": "198",
+      "meterId": "0013",
+      "month": "NOV",
+      "year": 2024,
+      "value": 1200
+    },
+    {
+      "id": "199",
+      "meterId": "0013",
+      "month": "DEC",
+      "year": 2024,
+      "value": 1270
+    },
+    {
+      "id": "200",
+      "meterId": "0013",
+      "month": "JAN",
+      "year": 2025,
+      "value": 1345
+    },
+    {
+      "id": "201",
+      "meterId": "0013",
+      "month": "FEB",
+      "year": 2025,
+      "value": 1415
+    },
+    {
+      "id": "202",
+      "meterId": "0013",
+      "month": "MAR",
+      "year": 2025,
+      "value": 1490
+    },
+    {
+      "id": "203",
+      "meterId": "0013",
+      "month": "APR",
+      "year": 2025,
+      "value": 1560
+    },
+    {
+      "id": "204",
+      "meterId": "0013",
+      "month": "MAY",
+      "year": 2025,
+      "value": 1635
+    },
+    {
+      "id": "205",
+      "meterId": "0013",
+      "month": "JUN",
+      "year": 2025,
+      "value": 1705
+    },
+    {
+      "id": "206",
+      "meterId": "0013",
+      "month": "JUL",
+      "year": 2025,
+      "value": 1780
+    },
+    {
+      "id": "207",
+      "meterId": "0013",
+      "month": "AUG",
+      "year": 2025,
+      "value": 1850
+    },
+    {
+      "id": "208",
+      "meterId": "0013",
+      "month": "SEP",
+      "year": 2025,
+      "value": 1925
+    },
+
+    {
+      "id": "209",
+      "meterId": "0014",
+      "month": "JUN",
+      "year": 2024,
+      "value": 96
+    },
+    {
+      "id": "210",
+      "meterId": "0014",
+      "month": "JUL",
+      "year": 2024,
+      "value": 102
+    },
+    {
+      "id": "211",
+      "meterId": "0014",
+      "month": "AUG",
+      "year": 2024,
+      "value": 107
+    },
+    {
+      "id": "212",
+      "meterId": "0014",
+      "month": "SEP",
+      "year": 2024,
+      "value": 113
+    },
+    {
+      "id": "213",
+      "meterId": "0014",
+      "month": "OCT",
+      "year": 2024,
+      "value": 120
+    },
+    {
+      "id": "214",
+      "meterId": "0014",
+      "month": "NOV",
+      "year": 2024,
+      "value": 128
+    },
+    {
+      "id": "215",
+      "meterId": "0014",
+      "month": "DEC",
+      "year": 2024,
+      "value": 137
+    },
+    {
+      "id": "216",
+      "meterId": "0014",
+      "month": "JAN",
+      "year": 2025,
+      "value": 147
+    },
+    {
+      "id": "217",
+      "meterId": "0014",
+      "month": "FEB",
+      "year": 2025,
+      "value": 156
+    },
+    {
+      "id": "218",
+      "meterId": "0014",
+      "month": "MAR",
+      "year": 2025,
+      "value": 166
+    },
+    {
+      "id": "219",
+      "meterId": "0014",
+      "month": "APR",
+      "year": 2025,
+      "value": 175
+    },
+    {
+      "id": "220",
+      "meterId": "0014",
+      "month": "MAY",
+      "year": 2025,
+      "value": 185
+    },
+    {
+      "id": "221",
+      "meterId": "0014",
+      "month": "JUN",
+      "year": 2025,
+      "value": 194
+    },
+    {
+      "id": "222",
+      "meterId": "0014",
+      "month": "JUL",
+      "year": 2025,
+      "value": 204
+    },
+    {
+      "id": "223",
+      "meterId": "0014",
+      "month": "AUG",
+      "year": 2025,
+      "value": 213
+    },
+    {
+      "id": "224",
+      "meterId": "0014",
+      "month": "SEP",
+      "year": 2025,
+      "value": 223
+    },
+
+    {
+      "id": "225",
+      "meterId": "0015",
+      "month": "JUN",
+      "year": 2024,
+      "value": 610
+    },
+    {
+      "id": "226",
+      "meterId": "0015",
+      "month": "JUL",
+      "year": 2024,
+      "value": 650
+    },
+    {
+      "id": "227",
+      "meterId": "0015",
+      "month": "AUG",
+      "year": 2024,
+      "value": 695
+    },
+    {
+      "id": "228",
+      "meterId": "0015",
+      "month": "SEP",
+      "year": 2024,
+      "value": 735
+    },
+    {
+      "id": "229",
+      "meterId": "0015",
+      "month": "OCT",
+      "year": 2024,
+      "value": 780
+    },
+    {
+      "id": "230",
+      "meterId": "0015",
+      "month": "NOV",
+      "year": 2024,
+      "value": 830
+    },
+    {
+      "id": "231",
+      "meterId": "0015",
+      "month": "DEC",
+      "year": 2024,
+      "value": 885
+    },
+    {
+      "id": "232",
+      "meterId": "0015",
+      "month": "JAN",
+      "year": 2025,
+      "value": 945
+    },
+    {
+      "id": "233",
+      "meterId": "0015",
+      "month": "FEB",
+      "year": 2025,
+      "value": 1000
+    },
+    {
+      "id": "234",
+      "meterId": "0015",
+      "month": "MAR",
+      "year": 2025,
+      "value": 1060
+    },
+    {
+      "id": "235",
+      "meterId": "0015",
+      "month": "APR",
+      "year": 2025,
+      "value": 1115
+    },
+    {
+      "id": "236",
+      "meterId": "0015",
+      "month": "MAY",
+      "year": 2025,
+      "value": 1175
+    },
+    {
+      "id": "237",
+      "meterId": "0015",
+      "month": "JUN",
+      "year": 2025,
+      "value": 1230
+    },
+    {
+      "id": "238",
+      "meterId": "0015",
+      "month": "JUL",
+      "year": 2025,
+      "value": 1290
+    },
+    {
+      "id": "239",
+      "meterId": "0015",
+      "month": "AUG",
+      "year": 2025,
+      "value": 1345
+    },
+    {
+      "id": "240",
+      "meterId": "0015",
+      "month": "SEP",
+      "year": 2025,
+      "value": 1405
+    },
+
+    {
+      "id": "241",
+      "meterId": "0016",
+      "month": "JUN",
+      "year": 2024,
+      "value": 54
+    },
+    {
+      "id": "242",
+      "meterId": "0016",
+      "month": "JUL",
+      "year": 2024,
+      "value": 58
+    },
+    {
+      "id": "243",
+      "meterId": "0016",
+      "month": "AUG",
+      "year": 2024,
+      "value": 61
+    },
+    {
+      "id": "244",
+      "meterId": "0016",
+      "month": "SEP",
+      "year": 2024,
+      "value": 65
+    },
+    {
+      "id": "245",
+      "meterId": "0016",
+      "month": "OCT",
+      "year": 2024,
+      "value": 70
+    },
+    {
+      "id": "246",
+      "meterId": "0016",
+      "month": "NOV",
+      "year": 2024,
+      "value": 76
+    },
+    {
+      "id": "247",
+      "meterId": "0016",
+      "month": "DEC",
+      "year": 2024,
+      "value": 83
+    },
+    {
+      "id": "248",
+      "meterId": "0016",
+      "month": "JAN",
+      "year": 2025,
+      "value": 91
+    },
+    {
+      "id": "249",
+      "meterId": "0016",
+      "month": "FEB",
+      "year": 2025,
+      "value": 98
+    },
+    {
+      "id": "250",
+      "meterId": "0016",
+      "month": "MAR",
+      "year": 2025,
+      "value": 106
+    },
+    {
+      "id": "251",
+      "meterId": "0016",
+      "month": "APR",
+      "year": 2025,
+      "value": 113
+    },
+    {
+      "id": "252",
+      "meterId": "0016",
+      "month": "MAY",
+      "year": 2025,
+      "value": 121
+    },
+    {
+      "id": "253",
+      "meterId": "0016",
+      "month": "JUN",
+      "year": 2025,
+      "value": 128
+    },
+    {
+      "id": "254",
+      "meterId": "0016",
+      "month": "JUL",
+      "year": 2025,
+      "value": 136
+    },
+    {
+      "id": "255",
+      "meterId": "0016",
+      "month": "AUG",
+      "year": 2025,
+      "value": 143
+    },
+    {
+      "id": "256",
+      "meterId": "0016",
+      "month": "SEP",
+      "year": 2025,
+      "value": 151
+    },
+
+    {
+      "id": "257",
+      "meterId": "0017",
+      "month": "JUN",
+      "year": 2024,
+      "value": 275
+    },
+    {
+      "id": "258",
+      "meterId": "0017",
+      "month": "JUL",
+      "year": 2024,
+      "value": 305
+    },
+    {
+      "id": "259",
+      "meterId": "0017",
+      "month": "AUG",
+      "year": 2024,
+      "value": 340
+    },
+    {
+      "id": "260",
+      "meterId": "0017",
+      "month": "SEP",
+      "year": 2024,
+      "value": 370
+    },
+    {
+      "id": "261",
+      "meterId": "0017",
+      "month": "OCT",
+      "year": 2024,
+      "value": 405
+    },
+    {
+      "id": "262",
+      "meterId": "0017",
+      "month": "NOV",
+      "year": 2024,
+      "value": 445
+    },
+    {
+      "id": "263",
+      "meterId": "0017",
+      "month": "DEC",
+      "year": 2024,
+      "value": 490
+    },
+    {
+      "id": "264",
+      "meterId": "0017",
+      "month": "JAN",
+      "year": 2025,
+      "value": 540
+    },
+    {
+      "id": "265",
+      "meterId": "0017",
+      "month": "FEB",
+      "year": 2025,
+      "value": 585
+    },
+    {
+      "id": "266",
+      "meterId": "0017",
+      "month": "MAR",
+      "year": 2025,
+      "value": 635
+    },
+    {
+      "id": "267",
+      "meterId": "0017",
+      "month": "APR",
+      "year": 2025,
+      "value": 680
+    },
+    {
+      "id": "268",
+      "meterId": "0017",
+      "month": "MAY",
+      "year": 2025,
+      "value": 730
+    },
+    {
+      "id": "269",
+      "meterId": "0017",
+      "month": "JUN",
+      "year": 2025,
+      "value": 775
+    },
+    {
+      "id": "270",
+      "meterId": "0017",
+      "month": "JUL",
+      "year": 2025,
+      "value": 825
+    },
+    {
+      "id": "271",
+      "meterId": "0017",
+      "month": "AUG",
+      "year": 2025,
+      "value": 870
+    },
+    {
+      "id": "272",
+      "meterId": "0017",
+      "month": "SEP",
+      "year": 2025,
+      "value": 920
+    },
+
+    {
+      "id": "273",
+      "meterId": "0018",
+      "month": "JUN",
+      "year": 2024,
+      "value": 38
+    },
+    {
+      "id": "274",
+      "meterId": "0018",
+      "month": "JUL",
+      "year": 2024,
+      "value": 42
+    },
+    {
+      "id": "275",
+      "meterId": "0018",
+      "month": "AUG",
+      "year": 2024,
+      "value": 45
+    },
+    {
+      "id": "276",
+      "meterId": "0018",
+      "month": "SEP",
+      "year": 2024,
+      "value": 49
+    },
+    {
+      "id": "277",
+      "meterId": "0018",
+      "month": "OCT",
+      "year": 2024,
+      "value": 54
+    },
+    {
+      "id": "278",
+      "meterId": "0018",
+      "month": "NOV",
+      "year": 2024,
+      "value": 60
+    },
+    {
+      "id": "279",
+      "meterId": "0018",
+      "month": "DEC",
+      "year": 2024,
+      "value": 67
+    },
+    {
+      "id": "280",
+      "meterId": "0018",
+      "month": "JAN",
+      "year": 2025,
+      "value": 75
+    },
+    {
+      "id": "281",
+      "meterId": "0018",
+      "month": "FEB",
+      "year": 2025,
+      "value": 82
+    },
+    {
+      "id": "282",
+      "meterId": "0018",
+      "month": "MAR",
+      "year": 2025,
+      "value": 90
+    },
+    {
+      "id": "283",
+      "meterId": "0018",
+      "month": "APR",
+      "year": 2025,
+      "value": 97
+    },
+    {
+      "id": "284",
+      "meterId": "0018",
+      "month": "MAY",
+      "year": 2025,
+      "value": 105
+    },
+    {
+      "id": "285",
+      "meterId": "0018",
+      "month": "JUN",
+      "year": 2025,
+      "value": 112
+    },
+    {
+      "id": "286",
+      "meterId": "0018",
+      "month": "JUL",
+      "year": 2025,
+      "value": 120
+    },
+    {
+      "id": "287",
+      "meterId": "0018",
+      "month": "AUG",
+      "year": 2025,
+      "value": 127
+    },
+    {
+      "id": "288",
+      "meterId": "0018",
+      "month": "SEP",
+      "year": 2025,
+      "value": 135
+    },
+
+    {
+      "id": "289",
+      "meterId": "0019",
+      "month": "JUN",
+      "year": 2024,
+      "value": 1120
+    },
+    {
+      "id": "290",
+      "meterId": "0019",
+      "month": "JUL",
+      "year": 2024,
+      "value": 1175
+    },
+    {
+      "id": "291",
+      "meterId": "0019",
+      "month": "AUG",
+      "year": 2024,
+      "value": 1235
+    },
+    {
+      "id": "292",
+      "meterId": "0019",
+      "month": "SEP",
+      "year": 2024,
+      "value": 1290
+    },
+    {
+      "id": "293",
+      "meterId": "0019",
+      "month": "OCT",
+      "year": 2024,
+      "value": 1350
+    },
+    {
+      "id": "294",
+      "meterId": "0019",
+      "month": "NOV",
+      "year": 2024,
+      "value": 1415
+    },
+    {
+      "id": "295",
+      "meterId": "0019",
+      "month": "DEC",
+      "year": 2024,
+      "value": 1485
+    },
+    {
+      "id": "296",
+      "meterId": "0019",
+      "month": "JAN",
+      "year": 2025,
+      "value": 1560
+    },
+    {
+      "id": "297",
+      "meterId": "0019",
+      "month": "FEB",
+      "year": 2025,
+      "value": 1630
+    },
+    {
+      "id": "298",
+      "meterId": "0019",
+      "month": "MAR",
+      "year": 2025,
+      "value": 1705
+    },
+    {
+      "id": "299",
+      "meterId": "0019",
+      "month": "APR",
+      "year": 2025,
+      "value": 1775
+    },
+    {
+      "id": "300",
+      "meterId": "0019",
+      "month": "MAY",
+      "year": 2025,
+      "value": 1850
+    },
+    {
+      "id": "301",
+      "meterId": "0019",
+      "month": "JUN",
+      "year": 2025,
+      "value": 1920
+    },
+    {
+      "id": "302",
+      "meterId": "0019",
+      "month": "JUL",
+      "year": 2025,
+      "value": 1995
+    },
+    {
+      "id": "303",
+      "meterId": "0019",
+      "month": "AUG",
+      "year": 2025,
+      "value": 2065
+    },
+    {
+      "id": "304",
+      "meterId": "0019",
+      "month": "SEP",
+      "year": 2025,
+      "value": 2140
+    },
+
+    {
+      "id": "305",
+      "meterId": "0020",
+      "month": "JUN",
+      "year": 2024,
+      "value": 67
+    },
+    {
+      "id": "306",
+      "meterId": "0020",
+      "month": "JUL",
+      "year": 2024,
+      "value": 72
+    },
+    {
+      "id": "307",
+      "meterId": "0020",
+      "month": "AUG",
+      "year": 2024,
+      "value": 76
+    },
+    {
+      "id": "308",
+      "meterId": "0020",
+      "month": "SEP",
+      "year": 2024,
+      "value": 81
+    },
+    {
+      "id": "309",
+      "meterId": "0020",
+      "month": "OCT",
+      "year": 2024,
+      "value": 87
+    },
+    {
+      "id": "310",
+      "meterId": "0020",
+      "month": "NOV",
+      "year": 2024,
+      "value": 94
+    },
+    {
+      "id": "311",
+      "meterId": "0020",
+      "month": "DEC",
+      "year": 2024,
+      "value": 102
+    },
+    {
+      "id": "312",
+      "meterId": "0020",
+      "month": "JAN",
+      "year": 2025,
+      "value": 111
+    },
+    {
+      "id": "313",
+      "meterId": "0020",
+      "month": "FEB",
+      "year": 2025,
+      "value": 119
+    },
+    {
+      "id": "314",
+      "meterId": "0020",
+      "month": "MAR",
+      "year": 2025,
+      "value": 128
+    },
+    {
+      "id": "315",
+      "meterId": "0020",
+      "month": "APR",
+      "year": 2025,
+      "value": 136
+    },
+    {
+      "id": "316",
+      "meterId": "0020",
+      "month": "MAY",
+      "year": 2025,
+      "value": 145
+    },
+    {
+      "id": "317",
+      "meterId": "0020",
+      "month": "JUN",
+      "year": 2025,
+      "value": 153
+    },
+    {
+      "id": "318",
+      "meterId": "0020",
+      "month": "JUL",
+      "year": 2025,
+      "value": 162
+    },
+    {
+      "id": "319",
+      "meterId": "0020",
+      "month": "AUG",
+      "year": 2025,
+      "value": 170
+    },
+    {
+      "id": "320",
+      "meterId": "0020",
+      "month": "SEP",
+      "year": 2025,
+      "value": 179
+    }
+  ]
+}
