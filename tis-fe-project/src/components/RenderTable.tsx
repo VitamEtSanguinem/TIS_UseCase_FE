@@ -1,5 +1,6 @@
 import React from "react";
 import { useCallback } from "react";
+import { Link } from "react-router-dom";
 
 type AnyRecord = Record<string, any>;
 
@@ -86,7 +87,13 @@ const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
           {data.map((row, meterId) => (
             <tr key={meterId}>
               {columns.map((col) => (
-                <td key={col}>{renderValue(row[col])}</td>
+                <td key={col}>
+                  {col === "meterId" ? (
+                    <Link to={`/meters/${row.meterId}`}>{row.meterId}</Link>
+                  ) : (
+                    renderValue(row[col])
+                  )}
+                </td>
               ))}
             </tr>
           ))}

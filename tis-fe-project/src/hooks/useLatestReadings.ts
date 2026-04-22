@@ -1,19 +1,9 @@
 import { useMemo } from "react";
 import { useDBReader } from "./useDBReader";
 import type { Reading } from "../types/types";
-
-const monthMap: Record<string, number> = {
-  JAN: 1, FEB: 2, MAR: 3, APR: 4,
-  MAY: 5, JUN: 6, JUL: 7, AUG: 8,
-  SEP: 9, OCT: 10, NOV: 11, DEC: 12,
-};
+import { getReadingScore } from "../utils/dateScore";
 
 
-
-const getScore = (item: Reading) => {
-  const month = monthMap[item.month.trim().toUpperCase()] ?? 0;
-  return item.year * 100 + month;
-};
 
 export const useLatestReadings = (endpoint: string) => {
   const { data = [], isPending, error } = useDBReader<Reading>(endpoint);
@@ -25,10 +15,10 @@ export const useLatestReadings = (endpoint: string) => {
 
     for (const item of data) {
       const key = item.meterId;
-      const score = getScore(item);
+      const score = getReadingScore(item);
       const current = latestByMeter.get(key);
 
-      if (!current || score > getScore(current)) {
+      if (!current || score > getReadingScore(current)) {
         latestByMeter.set(key, item);
       }
     }

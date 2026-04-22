@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import MetersPage from "./pages/Meters";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import MeterDetails from "./pages/MeterDetails";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/meters" element={<MetersPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/meters/:id" element={<MeterDetails />} />
         </Routes>
       </div>
     </BrowserRouter>

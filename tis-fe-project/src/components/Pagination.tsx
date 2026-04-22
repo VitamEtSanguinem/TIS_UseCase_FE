@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "antd";
 
 interface Props {
   currentPage: number;
@@ -19,24 +20,26 @@ const Pagination: React.FC<Props> = ({
 }) => {
   return (
     <div className="d-flex justify-content-center align-items-center gap-2 mt-3">
-      <button
-        className="btn btn-sm btn-primary"
+      <Button
+        color="primary"
+        variant="solid"
         disabled={currentPage === 1}
         onClick={() => onPageChange(currentPage - 1)}
       >
         Prev
-      </button>
+      </Button>
       <span>
         Page {currentPage} / {totalPages || 1}
       </span>
 
-      <button
-        className="btn btn-sm btn-primary"
+      <Button
+        color="primary"
+        variant="solid"
         disabled={currentPage === totalPages}
         onClick={() => onPageChange(currentPage + 1)}
       >
         Next
-      </button>
+      </Button>
 
       <select
         className="form-select form-select-sm w-auto"
