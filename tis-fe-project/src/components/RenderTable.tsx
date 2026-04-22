@@ -17,16 +17,13 @@ interface Props {
 const sortableColumns = ["meterId", "label", "type", "value"];
 
 const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
-  const getColumns = useCallback(
-    (rows: AnyRecord[]) => {
-      const keys = new Set<string>();
-      rows.forEach((row) => {
-        Object.keys(row).forEach((key) => keys.add(key));
-      });
-      return Array.from(keys);
-    },
-    [data],
-  );
+  const getColumns = useCallback((rows: AnyRecord[]) => {
+    const keys = new Set<string>();
+    rows.forEach((row) => {
+      Object.keys(row).forEach((key) => keys.add(key));
+    });
+    return Array.from(keys);
+  }, []);
 
   const renderValue = useCallback((value: any): React.ReactNode => {
     if (value === null || value === undefined) return "";
