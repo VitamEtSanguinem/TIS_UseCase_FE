@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import { useCallback } from "react";
 
 type AnyRecord = Record<string, any>;
 
@@ -10,20 +10,25 @@ type SortConfig = {
 
 interface Props {
   data: AnyRecord[];
-  onSort?: (key: string) => void; // optional = safer
+  onSort?: (key: string) => void;
   sortConfig?: SortConfig;
 }
 
-const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
-  const getColumns = (rows: AnyRecord[]) => {
-    const keys = new Set<string>();
-    rows.forEach((row) => {
-      Object.keys(row).forEach((key) => keys.add(key));
-    });
-    return Array.from(keys);
-  };
+const sortableColumns = ["meterId", "label", "type", "value"];
 
-  const renderValue = (value: any): React.ReactNode => {
+const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
+  const getColumns = useCallback(
+    (rows: AnyRecord[]) => {
+      const keys = new Set<string>();
+      rows.forEach((row) => {
+        Object.keys(row).forEach((key) => keys.add(key));
+      });
+      return Array.from(keys);
+    },
+    [data],
+  );
+
+  const renderValue = useCallback((value: any): React.ReactNode => {
     if (value === null || value === undefined) return "";
 
     if (typeof value === "object") {
@@ -35,19 +40,15 @@ const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
     }
 
     return String(value);
-  };
+  }, []);
 
   if (!data.length) return <div>No data</div>;
 
   const columns = getColumns(data);
-  const sortableColumns = ["meterId", "label", "type", "value"];
 
   return (
-    <div
-      className="container mt-4"
-      style={{ fontSize: "0.85rem", width: "auto" }}
-    >
-      <table className="table table-hover table-dark table-bordered text-center align-middle">
+    <div style={{ fontSize: "0.85rem", width: "auto" }}>
+      <table>
         <thead>
           <tr>
             {columns.map((col) => {
@@ -65,7 +66,7 @@ const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
                     opacity: isSortable ? 1 : 0.6,
                   }}
                 >
-                  <div className="d-flex justify-content-center align-items-center gap-1">
+                  <div>
                     {col}
 
                     {isSortable && (
@@ -85,8 +86,8 @@ const RenderTable: React.FC<Props> = ({ data, onSort, sortConfig }: Props) => {
         </thead>
 
         <tbody>
-          {data.map((row, rowIndex) => (
-            <tr key={rowIndex}>
+          {data.map((row, meterId) => (
+            <tr key={meterId}>
               {columns.map((col) => (
                 <td key={col}>{renderValue(row[col])}</td>
               ))}

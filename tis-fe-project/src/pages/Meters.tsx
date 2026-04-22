@@ -5,15 +5,20 @@ import { useState } from "react";
 import Pagination from "../components/Pagination";
 import { useSort } from "../hooks/useSort";
 import { useTypeFilter } from "../hooks/useTypeFilter";
+import type { Meter } from "../types/types";
+
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function MetersPage() {
-  const { data: meters } = useDBReader("http://localhost:3000/meters");
-  const { data: readings } = useLatestReadings(
-    "http://localhost:3000/readings",
-  );
+  const { data: meters = [] } = useDBReader<Meter>(`${BASE_URL}/meters`);
 
-  const merged = meters.map((meter) => {
-    const reading = readings.find((r) => r.meterId === meter.id);
+  const { data: readings = [] } = useLatestReadings(`${BASE_URL}/readings`);
+
+  const metersSafe = meters ?? [];
+  const readingsSafe = readings ?? [];
+
+  const merged = metersSafe.map((meter) => {
+    const reading = readingsSafe.find((r) => r.meterId === meter.id);
 
     return {
       meterId: meter.id,
@@ -43,7 +48,6 @@ export default function MetersPage() {
   return (
     <div className="container mt-4">
       <select
-        className="form-select form-select-sm w-auto"
         value={typeFilter}
         onChange={(e) => setTypeFilter(e.target.value)}
       >
@@ -51,7 +55,7 @@ export default function MetersPage() {
         <option value="electricity">Electricity</option>
         <option value="gas">Gas</option>
       </select>
-      <div className="d-flex justify-content-center">
+      <div>
         <div style={{ maxWidth: "900px", width: "100%" }}>
           <RenderTable
             data={paginated}

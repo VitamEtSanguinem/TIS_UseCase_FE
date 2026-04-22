@@ -4,7 +4,6 @@ export function useTypeFilter<T extends { type?: string }>(data: T[]) {
   const [typeFilter, setTypeFilter] = useState<string>("both");
 
   const filteredData = useMemo(() => {
-    //if (typeFilter === "all") return data;
 
     if (typeFilter === "both") {
       return data.filter(
