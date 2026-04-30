@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 
 
-export function useSort(data: any[]) {
+export function useSort(data: any) {
   const [sortConfig, setSortConfig] = useState<{
     key: string;
     direction: "asc" | "desc";

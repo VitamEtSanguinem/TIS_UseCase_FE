@@ -4,7 +4,11 @@ import type { Reading, Meter } from "../types/types";
 import { getReadingScore } from "../utils/dateScore";
 import { computeConsumptionStats } from "../utils/consumption";
 import { useReadingMutations } from "../hooks/useMutations";
-import { validateAddReading, confirmDelete } from "../utils/readingRules";
+import {
+  validateAddReading,
+  confirmDelete,
+  validateEditReading,
+} from "../utils/readingRules";
 import { useState } from "react";
 import { getNextMonthYear } from "../utils/dateHelper";
 
@@ -21,13 +25,16 @@ export default function MeterDetailsPage() {
 
   const { data: meters = [] } = useDBReader<Meter>(`${BASE_URL}/meters`);
 
-  const { deleteReading, addReading } = useReadingMutations();
+  const { deleteReading, addReading, updateReading } = useReadingMutations();
 
   const meter = meters.find((m) => m.id === id);
   const unit = meter?.unit ?? "";
 
   const [draft, setDraft] = useState<null | { value: string }>(null);
   const [addError, setAddError] = useState("");
+  const [editValues, setEditValues] = useState<Record<string, string>>({});
+  const [editErrors, setEditErrors] = useState<Record<string, string>>({});
+  const [editingRow, setEditingRow] = useState<string | null>(null);
 
   if (isPending) return <p>Loading...</p>;
   if (error) return <p>Error loading data</p>;
@@ -70,6 +77,25 @@ export default function MeterDetailsPage() {
   const handleDelete = (readingId: any) => {
     if (!confirmDelete("this reading")) return;
     deleteReading(readingId);
+  };
+
+  const handleEditSave = (r: Reading, index: number) => {
+    const newValue = Number(editValues[r.id] ?? r.value);
+
+    const error = validateEditReading(filtered, index, newValue);
+
+    if (error) {
+      setEditErrors((prev) => ({ ...prev, [r.id]: error }));
+      return;
+    }
+
+    updateReading({
+      id: r.id,
+      data: { value: newValue },
+    });
+
+    setEditingRow(null);
+    setEditErrors((prev) => ({ ...prev, [r.id]: "" }));
   };
 
   return (
@@ -140,20 +166,61 @@ export default function MeterDetailsPage() {
               </tr>
             )}
 
-            {filtered.map((r, index) => (
-              <tr key={r.id}>
-                <td>{r.year}</td>
-                <td>{r.month}</td>
-                <td>{r.value}</td>
-                <td>{unit}</td>
+            {filtered.map((r, index) => {
+              const isEditing = editingRow === r.id;
 
-                <td>
-                  {index === 0 && (
-                    <button onClick={() => handleDelete(r.id)}>Delete</button>
-                  )}
-                </td>
-              </tr>
-            ))}
+              return (
+                <tr key={r.id}>
+                  <td>{r.year}</td>
+                  <td>{r.month}</td>
+
+                  <td>
+                    {isEditing ? (
+                      <>
+                        <input
+                          type="number"
+                          value={editValues[r.id] ?? r.value}
+                          onChange={(e) =>
+                            setEditValues((prev) => ({
+                              ...prev,
+                              [r.id]: e.target.value,
+                            }))
+                          }
+                        />
+
+                        {editErrors[r.id] && (
+                          <div style={{ color: "red" }}>{editErrors[r.id]}</div>
+                        )}
+                      </>
+                    ) : (
+                      r.value
+                    )}
+                  </td>
+
+                  <td>{unit}</td>
+
+                  <td>
+                    {isEditing ? (
+                      <>
+                        <button onClick={() => handleEditSave(r, index)}>
+                          Save
+                        </button>
+
+                        <button onClick={() => setEditingRow(null)}>
+                          Cancel
+                        </button>
+                      </>
+                    ) : (
+                      <button onClick={() => setEditingRow(r.id)}>Edit</button>
+                    )}
+
+                    {index === 0 && (
+                      <button onClick={() => handleDelete(r.id)}>Delete</button>
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       )}
