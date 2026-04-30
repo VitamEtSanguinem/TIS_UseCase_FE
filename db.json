@@ -3,140 +3,200 @@
     {
       "id": "0001",
       "label": "Urithiru Tower Pinnacle - Electricity",
-      "location": { "lat": 47.5316, "lon": 21.6273 },
+      "location": {
+        "lat": 47.5316,
+        "lon": 21.6273
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0002",
       "label": "Shattered Plains Chasmfiend Nest - Gas",
-      "location": { "lat": 47.5331, "lon": 21.6114 },
+      "location": {
+        "lat": 47.5331,
+        "lon": 21.6114
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0003",
       "label": "Kholinar Palace Oathgate - Electricity",
-      "location": { "lat": 47.5311, "lon": 21.6244 },
+      "location": {
+        "lat": 47.5311,
+        "lon": 21.6244
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0004",
       "label": "Honor's Perpendicularity - Gas",
-      "location": { "lat": 47.5289, "lon": 21.6347 },
+      "location": {
+        "lat": 47.5289,
+        "lon": 21.6347
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0005",
       "label": "Cultivation's Garden - Electricity",
-      "location": { "lat": 47.5312, "lon": 21.6265 },
+      "location": {
+        "lat": 47.5312,
+        "lon": 21.6265
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0006",
       "label": "Luthadel Keep Venture - Gas",
-      "location": { "lat": 47.5287, "lon": 21.6221 },
+      "location": {
+        "lat": 47.5287,
+        "lon": 21.6221
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0007",
       "label": "Well of Ascension - Electricity",
-      "location": { "lat": 47.5325, "lon": 21.6198 },
+      "location": {
+        "lat": 47.5325,
+        "lon": 21.6198
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0008",
       "label": "Kredik Shaw Steel Inquisitor Hall - Gas",
-      "location": { "lat": 47.5267, "lon": 21.6156 },
+      "location": {
+        "lat": 47.5267,
+        "lon": 21.6156
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0009",
       "label": "Elendel Wax and Wayne Mansion - Electricity",
-      "location": { "lat": 47.5298, "lon": 21.6312 },
+      "location": {
+        "lat": 47.5298,
+        "lon": 21.6312
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0010",
       "label": "Bilming Steel Mill - Gas",
-      "location": { "lat": 47.5342, "lon": 21.6089 },
+      "location": {
+        "lat": 47.5342,
+        "lon": 21.6089
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0011",
       "label": "Hemalurgy Spike Laboratory - Electricity",
-      "location": { "lat": 47.5279, "lon": 21.6234 },
+      "location": {
+        "lat": 47.5279,
+        "lon": 21.6234
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0012",
       "label": "Atium Geode Mining Station - Gas",
-      "location": { "lat": 47.5356, "lon": 21.6167 },
+      "location": {
+        "lat": 47.5356,
+        "lon": 21.6167
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0013",
       "label": "Scadrial Southern Continent - Electricity",
-      "location": { "lat": 47.5301, "lon": 21.6189 },
+      "location": {
+        "lat": 47.5301,
+        "lon": 21.6189
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0014",
       "label": "New Seran Broadsheets Office - Gas",
-      "location": { "lat": 47.5324, "lon": 21.6278 },
+      "location": {
+        "lat": 47.5324,
+        "lon": 21.6278
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0015",
       "label": "Thaylen City Gemheart Market - Electricity",
-      "location": { "lat": 47.5318, "lon": 21.6251 },
+      "location": {
+        "lat": 47.5318,
+        "lon": 21.6251
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0016",
       "label": "Shinovar Horneater Peaks - Gas",
-      "location": { "lat": 47.5306, "lon": 21.6259 },
+      "location": {
+        "lat": 47.5306,
+        "lon": 21.6259
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0017",
       "label": "Lasting Integrity Honorspren City - Electricity",
-      "location": { "lat": 47.5263, "lon": 21.6203 },
+      "location": {
+        "lat": 47.5263,
+        "lon": 21.6203
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0018",
       "label": "Aimia Sleepless Sanctuary - Gas",
-      "location": { "lat": 47.5295, "lon": 21.6287 },
+      "location": {
+        "lat": 47.5295,
+        "lon": 21.6287
+      },
       "type": "gas",
       "unit": "m3"
     },
     {
       "id": "0019",
       "label": "Bridge Four Barracks - Electricity",
-      "location": { "lat": 47.5338, "lon": 21.6142 },
+      "location": {
+        "lat": 47.5338,
+        "lon": 21.6142
+      },
       "type": "electricity",
       "unit": "kWh"
     },
     {
       "id": "0020",
       "label": "Pits of Hathsin Atium Mine - Gas",
-      "location": { "lat": 47.5272, "lon": 21.6178 },
+      "location": {
+        "lat": 47.5272,
+        "lon": 21.6178
+      },
       "type": "gas",
       "unit": "m3"
     }
@@ -254,7 +314,6 @@
       "year": 2025,
       "value": 2425
     },
-
     {
       "id": "17",
       "meterId": "0002",
@@ -367,7 +426,6 @@
       "year": 2025,
       "value": 246
     },
-
     {
       "id": "33",
       "meterId": "0003",
@@ -480,7 +538,6 @@
       "year": 2025,
       "value": 1935
     },
-
     {
       "id": "49",
       "meterId": "0004",
@@ -593,7 +650,6 @@
       "year": 2025,
       "value": 188
     },
-
     {
       "id": "65",
       "meterId": "0005",
@@ -706,7 +762,6 @@
       "year": 2025,
       "value": 1645
     },
-
     {
       "id": "81",
       "meterId": "0006",
@@ -819,7 +874,6 @@
       "year": 2025,
       "value": 156
     },
-
     {
       "id": "97",
       "meterId": "0007",
@@ -932,7 +986,6 @@
       "year": 2025,
       "value": 1060
     },
-
     {
       "id": "113",
       "meterId": "0008",
@@ -1045,7 +1098,6 @@
       "year": 2025,
       "value": 124
     },
-
     {
       "id": "129",
       "meterId": "0009",
@@ -1158,7 +1210,6 @@
       "year": 2025,
       "value": 2735
     },
-
     {
       "id": "145",
       "meterId": "0010",
@@ -1271,7 +1322,6 @@
       "year": 2025,
       "value": 254
     },
-
     {
       "id": "161",
       "meterId": "0011",
@@ -1384,7 +1434,6 @@
       "year": 2025,
       "value": 1200
     },
-
     {
       "id": "177",
       "meterId": "0012",
@@ -1497,7 +1546,6 @@
       "year": 2025,
       "value": 185
     },
-
     {
       "id": "193",
       "meterId": "0013",
@@ -1610,7 +1658,6 @@
       "year": 2025,
       "value": 1925
     },
-
     {
       "id": "209",
       "meterId": "0014",
@@ -1723,7 +1770,6 @@
       "year": 2025,
       "value": 223
     },
-
     {
       "id": "225",
       "meterId": "0015",
@@ -1836,7 +1882,6 @@
       "year": 2025,
       "value": 1405
     },
-
     {
       "id": "241",
       "meterId": "0016",
@@ -1949,7 +1994,6 @@
       "year": 2025,
       "value": 151
     },
-
     {
       "id": "257",
       "meterId": "0017",
@@ -2062,7 +2106,6 @@
       "year": 2025,
       "value": 920
     },
-
     {
       "id": "273",
       "meterId": "0018",
@@ -2175,7 +2218,6 @@
       "year": 2025,
       "value": 135
     },
-
     {
       "id": "289",
       "meterId": "0019",
@@ -2288,7 +2330,6 @@
       "year": 2025,
       "value": 2140
     },
-
     {
       "id": "305",
       "meterId": "0020",
@@ -2400,6 +2441,14 @@
       "month": "SEP",
       "year": 2025,
       "value": 179
+    },
+    {
+      "meterId": "0001",
+      "month": "OCT",
+      "year": 2025,
+      "value": 2800,
+      "id": "_eGabt-RBes"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
