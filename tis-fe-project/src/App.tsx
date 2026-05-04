@@ -1,34 +1,27 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MetersPage from "./pages/Meters";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import MeterDetails from "./pages/MeterDetails";
+import { Layout } from "antd";
+import Navbar from "./components/Navbar";
+import { useState } from "react";
+import { ConfigProvider, theme } from "antd";
 
 function App() {
+  const [darkMode] = useState(true);
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-expand navbar-dark bg-dark px-3">
-        <Link className="navbar-brand" to="/">
-          TIS Frontend Use Case
-        </Link>
-
-        <div className="navbar-nav">
-          <Link className="nav-link" to="/meters">
-            Meters
-          </Link>
-          <Link className="nav-link" to="/dashboard">
-            Dashboard
-          </Link>
-        </div>
-      </nav>
-
-      <div className="container mt-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/meters" element={<MetersPage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/meters/:id" element={<MeterDetails />} />
-        </Routes>
+      <div>
+        <Layout>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/meters" element={<MetersPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/meters/:id" element={<MeterDetails />} />
+          </Routes>
+        </Layout>
       </div>
     </BrowserRouter>
   );
