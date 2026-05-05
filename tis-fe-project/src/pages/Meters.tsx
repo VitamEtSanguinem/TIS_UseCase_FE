@@ -83,7 +83,7 @@ export default function MetersPage() {
       <Content
         style={{
           padding: "24px",
-          maxWidth: 1100,
+
           margin: "0 auto",
         }}
       >
@@ -102,7 +102,8 @@ export default function MetersPage() {
               showSizeChanger: true,
             }}
             scroll={{
-              y: 475
+              x: "max-content",
+              y: 350
             }}
           />
         </Card>

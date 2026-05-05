@@ -5,6 +5,16 @@
 body {
     background: #0f1115;
     margin: 0;
+    min-width: 1024px;
+    /* prevents ugly ultra-narrow collapse */
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 /* ======================================================
@@ -16,6 +26,9 @@ body {
     border-radius: 12px;
     background: #151821;
     overflow: hidden;
+    min-width: 0;
+    width: 100%;
+
 }
 
 /* Gradient border */
@@ -80,6 +93,10 @@ body {
 .custom-menu {
     background: transparent !important;
     border-bottom: none !important;
+    display: flex;
+    flex-wrap: wrap;
+    /* allows wrap instead of breaking layout */
+    gap: 6px;
 }
 
 /* base item */
