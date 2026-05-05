@@ -1,9 +1,11 @@
 import { useLatestReadings } from "../hooks/useLatestReadings";
 import { useDBReader } from "../hooks/useDBReader";
 import type { Meter } from "../types/types";
-import { Table } from "antd";
-import { useState } from "react";
+import {
+  Table, Card, Layout, Typography
+} from "antd";
 import { Link } from "react-router-dom";
+import PageLayout from "../components/PageLayout";
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
@@ -12,10 +14,11 @@ export default function MetersPage() {
 
   const { data: readings = [] } = useLatestReadings(`${BASE_URL}/readings`);
 
+  const { Content } = Layout;
+  const { Title } = Typography;
+
   const metersSafe = meters ?? [];
   const readingsSafe = readings ?? [];
-
-  const [pageSize, setPageSize] = useState(5);
 
   const merged = metersSafe.map((meter) => {
     const reading = readingsSafe.find((r) => r.meterId === meter.id);
@@ -76,24 +79,34 @@ export default function MetersPage() {
   ];
 
   return (
-    <div className="container mt-4">
-      <div>
-        <div style={{ maxWidth: "900px", width: "100%" }}>
+    <PageLayout>
+      <Content
+        style={{
+          padding: "24px",
+          maxWidth: 1100,
+          margin: "0 auto",
+        }}
+      >
+        <Title level={3} style={{ marginBottom: 16 }} className="gradient-text">
+          Meters
+        </Title>
+
+        <Card className="glow-card">
           <Table
             dataSource={merged}
             columns={columns}
             rowKey="meterId"
             pagination={{
-              pageSize,
-              showSizeChanger: true,
+              defaultPageSize: 5,
               pageSizeOptions: ["5", "10", "20"],
-              onShowSizeChange: (_, size) => {
-                setPageSize(size);
-              },
+              showSizeChanger: true,
+            }}
+            scroll={{
+              y: 475
             }}
           />
-        </div>
-      </div>
-    </div>
+        </Card>
+      </Content>
+    </PageLayout>
   );
 }

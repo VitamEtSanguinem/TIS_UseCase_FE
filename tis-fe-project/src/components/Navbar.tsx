@@ -7,11 +7,20 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <Header style={{ display: "flex", alignItems: "center" }}>
+    <Header
+      style={{
+        background: "#000000", // darker than page
+        display: "flex",
+        alignItems: "center",
+        padding: "0 24px",
+        borderBottom: "1px solid rgba(255,255,255,0.05)",
+      }}
+    >
       <div style={{ color: "white", marginRight: 20 }}>TIS FE Use Case</div>
 
       <Menu
-        theme="dark"
+
+        className="custom-menu"
         mode="horizontal"
         selectedKeys={[location.pathname]}
         items={[

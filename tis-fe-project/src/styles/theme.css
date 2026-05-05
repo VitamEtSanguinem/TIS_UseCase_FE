@@ -1,0 +1,304 @@
+/* ======================================================
+   BASE DARK THEME BACKDROP
+====================================================== */
+
+body {
+    background: #0f1115;
+    margin: 0;
+}
+
+/* ======================================================
+   GLOW CARDS (modern dashboard panels)
+====================================================== */
+
+.glow-card {
+    position: relative;
+    border-radius: 12px;
+    background: #151821;
+    overflow: hidden;
+}
+
+/* Gradient border */
+.glow-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+
+    background: linear-gradient(135deg, #4f46e5, #06b6d4, #10b981);
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+/* Soft glow */
+.glow-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg,
+            rgba(79, 70, 229, 0.15),
+            rgba(6, 182, 212, 0.15),
+            rgba(16, 185, 129, 0.15));
+
+    filter: blur(12px);
+    z-index: -1;
+}
+
+/* ======================================================
+   ANT DESIGN TABLE OVERRIDES
+====================================================== */
+
+.ant-table {
+    background: #151821 !important;
+}
+
+.ant-table-thead>tr>th {
+    background: #1a1f2b !important;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.ant-table-tbody>tr>td {
+    background: #151821;
+}
+
+.ant-table-tbody>tr:hover>td {
+    background: rgba(79, 70, 229, 0.08) !important;
+}
+
+/* ======================================================
+   NAVIGATION MENU (MODERN PILL SYSTEM)
+====================================================== */
+
+.custom-menu {
+    background: transparent !important;
+    border-bottom: none !important;
+}
+
+/* base item */
+.custom-menu .ant-menu-item {
+    height: auto !important;
+    line-height: normal !important;
+
+    padding: 6px 14px !important;
+    margin-right: 8px;
+
+    border-radius: 999px;
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.85) !important;
+
+    transition: color 0.15s ease;
+}
+
+/* remove AntD underline */
+.custom-menu .ant-menu-item::after {
+    display: none !important;
+}
+
+/* ======================================================
+   HOVER (ONLY FOR NON-SELECTED ITEMS)
+====================================================== */
+
+.custom-menu .ant-menu-item:not(.ant-menu-item-selected):hover {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+/* hover pill glow */
+.custom-menu .ant-menu-item:not(.ant-menu-item-selected):hover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+
+    background: #838588;
+
+    opacity: 0.16;
+
+    transition: opacity 0.15s ease, transform 0.15s ease;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ======================================================
+   SELECTED ITEM (STABLE GRADIENT OUTLINE + GLOW)
+====================================================== */
+
+.custom-menu .ant-menu-item-selected {
+    color: #ffffff !important;
+    font-weight: 500;
+    background: transparent !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* gradient outline */
+.custom-menu .ant-menu-item-selected::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    padding: 2px;
+
+    background: linear-gradient(135deg, #df8612, #1203df);
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+
+    /* animation setup */
+    opacity: 0;
+    transform: scale(0.85);
+    animation: pillIn 0.22s ease-out forwards;
+}
+
+/* glow behind selected */
+.custom-menu .ant-menu-item-selected::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 999px;
+
+    background: linear-gradient(135deg,
+            rgba(223, 134, 18, 0.35),
+            rgba(18, 3, 223, 0.35));
+
+    filter: blur(10px);
+    opacity: 0.6;
+    z-index: -2;
+
+    pointer-events: none;
+
+    animation: glowIn 0.3s ease-out forwards;
+}
+
+/* ======================================================
+   DISABLE HOVER EFFECT ON SELECTED ITEM
+====================================================== */
+
+.custom-menu .ant-menu-item-selected:hover {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+
+
+@keyframes pillIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glowIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
+
+
+/* ======================================================
+   CLEAN CARD WITH PURE GRADIENT BORDER ONLY
+====================================================== */
+
+
+/* ======================================================
+   BASE CARD
+====================================================== */
+
+.glow-card {
+    position: relative;
+    border-radius: 12px;
+    background: #151821;
+    overflow: hidden;
+}
+
+/* ======================================================
+   MOVING BORDER (NO ROTATION, ONLY POSITION SHIFT)
+====================================================== */
+
+.glow-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+
+    /* wide gradient strip */
+    background: linear-gradient(90deg,
+            #df8612,
+            #1203df,
+            #06b6d4,
+            #df8612);
+
+    background-size: 300% 100%;
+    animation: flow 6s linear infinite;
+
+    /* keep ONLY border visible */
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+/* subtle edge depth */
+.glow-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 0 1px rgba(223, 134, 18, 0.12),
+        0 0 12px rgba(18, 3, 223, 0.12);
+
+    pointer-events: none;
+}
+
+/* ======================================================
+   FLOW ANIMATION (THIS is the key)
+====================================================== */
+
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 300% 50%;
+    }
+}

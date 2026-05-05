@@ -2448,13 +2448,6 @@
       "year": 2025,
       "value": 2800,
       "id": "_eGabt-RBes"
-    },
-    {
-      "meterId": "0001",
-      "month": "NOV",
-      "year": 2025,
-      "value": 2974,
-      "id": "z8_PpoEe-Oo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

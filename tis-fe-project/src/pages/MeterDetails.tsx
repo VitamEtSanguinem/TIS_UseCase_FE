@@ -11,7 +11,9 @@ import {
 } from "../utils/readingRules";
 import { getNextMonthYear } from "../utils/dateHelper";
 import { useState } from "react";
-import { Table, Input, Button, Typography, Card, Space, message } from "antd";
+import { Table, Input, Button, Typography, Card, Space, message, Row, Col, Statistic } from "antd";
+import PageLayout from "../components/PageLayout";
+
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
@@ -164,57 +166,61 @@ export default function MeterDetailsPage() {
   ];
 
   return (
-    <div>
-      <h2>Meter ID: {id}</h2>
+    <PageLayout>
+      <div>
+        <h1>Meter ID: {id}</h1>
 
-      <Card style={{ marginBottom: 16 }}>
-        <h4>Consumption Insights</h4>
+        <Card style={{ marginBottom: 16 }} className="glow-card">
+          <h2>Consumption Insights</h2>
 
-        {avg === null ? (
-          <p>Not enough data</p>
-        ) : (
-          <>
-            <p>
-              <strong>Average:</strong> {avg.toFixed(2)} {unit}
-            </p>
-            <p>
-              <strong>Max:</strong> {max!.consumption} {unit} ({max!.month}{" "}
-              {max!.year})
-            </p>
-            <p>
-              <strong>Min:</strong> {min!.consumption} {unit} ({min!.month}{" "}
-              {min!.year})
-            </p>
-          </>
-        )}
-      </Card>
+          {avg === null ? (
+            <p>Not enough data</p>
+          ) : (
+            <>
+              <Row gutter={16}>
+                <Col span={8}>
+                  <Statistic title="Average" value={avg.toFixed(4)} suffix={unit} />
+                </Col>
+                <Col span={8}>
+                  <Statistic title="Max" value={max?.consumption} suffix={unit} />
+                </Col>
+                <Col span={8}>
+                  <Statistic title="Min" value={min?.consumption} suffix={unit} />
+                </Col>
+              </Row>
+            </>
+          )}
+        </Card>
 
-      <Card style={{ marginBottom: 16 }}>
-        <Space>
-          <Input
-            type="number"
-            placeholder="New reading value"
-            value={draftValue}
-            onChange={(e) => setDraftValue(e.target.value)}
+        <Card style={{ marginBottom: 16 }} className="glow-card">
+          <Space>
+            <Input
+              type="number"
+              placeholder="New reading value"
+              value={draftValue}
+              onChange={(e) => setDraftValue(e.target.value)}
+            />
+
+            <Button type="primary" onClick={handleAdd}>
+              Add Reading
+            </Button>
+          </Space>
+
+          {addError && (
+            <Typography.Text type="danger">{addError}</Typography.Text>
+          )}
+        </Card>
+        <Card style={{ marginBottom: 16 }} className="glow-card">
+          <Table
+            dataSource={filtered}
+            rowKey="id"
+            pagination={false}
+            columns={columns}
+            scroll={{ y: 450 }}
           />
+        </Card>
+      </div>
 
-          <Button type="primary" onClick={handleAdd}>
-            Add Reading
-          </Button>
-        </Space>
-
-        {addError && (
-          <Typography.Text type="danger">{addError}</Typography.Text>
-        )}
-      </Card>
-
-      <Table
-        dataSource={filtered}
-        rowKey="id"
-        pagination={false}
-        columns={columns}
-        scroll={{ y: 450 }}
-      />
-    </div>
+    </PageLayout>
   );
 }

@@ -5,11 +5,10 @@ import Dashboard from "./pages/Dashboard";
 import MeterDetails from "./pages/MeterDetails";
 import { Layout } from "antd";
 import Navbar from "./components/Navbar";
-import { useState } from "react";
-import { ConfigProvider, theme } from "antd";
+
 
 function App() {
-  const [darkMode] = useState(true);
+  //const [darkMode] = useState(true);
   return (
     <BrowserRouter>
       <div>

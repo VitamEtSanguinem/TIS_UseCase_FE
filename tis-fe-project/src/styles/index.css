@@ -1,0 +1,11 @@
+/* index.css */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #4f46e5, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
