@@ -13,9 +13,8 @@ import { getNextMonthYear } from "../utils/dateHelper";
 import { useState } from "react";
 import { Table, Input, Button, Typography, Card, Space, message, Row, Col, Statistic } from "antd";
 import PageLayout from "../components/PageLayout";
+import { BASE_URL } from "../services/readingsApi";
 
-
-const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function MeterDetailsPage() {
   const { id } = useParams<{ id: string }>();

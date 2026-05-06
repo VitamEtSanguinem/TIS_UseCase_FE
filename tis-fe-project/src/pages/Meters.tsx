@@ -6,8 +6,8 @@ import {
 } from "antd";
 import { Link } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
+import { BASE_URL } from "../services/readingsApi";
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function MetersPage() {
   const { data: meters = [] } = useDBReader<Meter>(`${BASE_URL}/meters`);
