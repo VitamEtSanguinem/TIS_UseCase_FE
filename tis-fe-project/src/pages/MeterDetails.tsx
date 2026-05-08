@@ -13,7 +13,7 @@ import { getNextMonthYear } from "../utils/dateHelper";
 import { useState } from "react";
 import { Table, Input, Button, Typography, Card, Space, message, Row, Col, Statistic } from "antd";
 import PageLayout from "../components/PageLayout";
-import { BASE_URL } from "../services/readingsApi";
+import { BASE_URL } from "../config/api";
 
 
 export default function MeterDetailsPage() {

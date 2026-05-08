@@ -12,7 +12,7 @@ export type Meter = {
 export type Reading = {
   id: string;
   meterId: string;
-  month:string;
-  year:number;
+  month: string;
+  year: number;
   value: number;
 };

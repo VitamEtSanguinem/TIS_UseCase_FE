@@ -6,7 +6,7 @@ import {
 } from "antd";
 import { Link } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
-import { BASE_URL } from "../services/readingsApi";
+import { BASE_URL } from "../config/api";
 
 
 export default function MetersPage() {

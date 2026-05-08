@@ -1,4 +1,4 @@
-export const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+import { API_BASE_URL } from "../config/api";
 
 export const deleteReading = async (id: string) => {
   const res = await fetch(`${BASE_URL}/readings/${id}`, {
