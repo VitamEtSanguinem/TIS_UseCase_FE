@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "../config/api";
+import { BASE_URL } from "../config/api";
 
 export const deleteReading = async (id: string) => {
   const res = await fetch(`${BASE_URL}/readings/${id}`, {

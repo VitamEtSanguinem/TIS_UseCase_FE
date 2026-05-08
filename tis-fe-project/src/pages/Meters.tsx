@@ -7,6 +7,16 @@ import {
 import { Link } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
 import { BASE_URL } from "../config/api";
+import type { ColumnsType } from "antd/es/table";
+
+type MeterRow = {
+  meterId: string;
+  label: string;
+  location: Meter["location"];
+  type: string;
+  value: number | undefined;
+  unit: Meter["unit"];
+};
 
 
 export default function MetersPage() {
@@ -20,7 +30,7 @@ export default function MetersPage() {
   const metersSafe = meters ?? [];
   const readingsSafe = readings ?? [];
 
-  const merged = metersSafe.map((meter) => {
+  const merged: MeterRow[] = metersSafe.map((meter) => {
     const reading = readingsSafe.find((r) => r.meterId === meter.id);
 
     return {
@@ -33,7 +43,7 @@ export default function MetersPage() {
     };
   });
 
-  const columns = [
+  const columns: ColumnsType<MeterRow> = [
     {
       title: "ID",
       dataIndex: "meterId",
@@ -69,7 +79,7 @@ export default function MetersPage() {
     {
       title: "Latest Reading",
       dataIndex: "value",
-      sorter: (a, b) => a.value - b.value,
+      sorter: (a, b) => (a.value ?? 0) - (b.value ?? 0),
     },
 
     {

@@ -3,24 +3,35 @@ import MetersPage from "./pages/Meters";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import MeterDetails from "./pages/MeterDetails";
-import { Layout } from "antd";
+import { ConfigProvider, Layout, theme } from "antd";
 import Navbar from "./components/Navbar";
 
 
 function App() {
-  //const [darkMode] = useState(true);
+
   return (
     <BrowserRouter>
       <div>
-        <Layout>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/meters" element={<MetersPage />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/meters/:id" element={<MeterDetails />} />
-          </Routes>
-        </Layout>
+        <ConfigProvider
+          theme={{
+            algorithm: theme.darkAlgorithm,
+            token: {
+              colorBgBase: "#0f1115",
+              colorBgContainer: "#151821",
+              borderRadius: 10,
+            },
+          }}
+        >
+          <Layout>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/meters" element={<MetersPage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/meters/:id" element={<MeterDetails />} />
+            </Routes>
+          </Layout>
+        </ConfigProvider>
       </div>
     </BrowserRouter>
   );
